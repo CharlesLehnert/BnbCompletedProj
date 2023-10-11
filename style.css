@@ -30,8 +30,13 @@ section.alternate-background {
   color: #fff;
 }
 
-main img {
-  width: 100px;
+img {
+  width: 100%;
+}
+ul#menu{
+  display: flex;
+   justify-content: center;
+   gap: 10px;
 }
 
 /* ---  Groups & Items --- */
@@ -56,6 +61,7 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+
 }
 
 .logo {
@@ -93,7 +99,9 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
+
 }
+
 
 form button {
   background-color: #ff385c;
@@ -102,6 +110,11 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+}
+form div{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* -------  Footer ------- */
@@ -117,3 +130,68 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (max-width: 376px){
+  .logo{
+    font-size: 60px;
+  }
+}
+
+@media all and (min-width: 768px){
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form div{
+  flex-direction: column;
+ 
+ width: 20%;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+form div input, form div select{
+width: 100%;
+}
+.row{
+  display: flex;
+  
+  }
+  .row img{
+    width: 25%;
+    margin-right: 10px;
+  }
+  .row p{
+    width: 50%;
+  }
+#ideas>div{
+  display:flex; 
+  gap: 10px;
+}
+#ideas>div>div{
+  
+  flex: 1;
+}
+div div h3 {
+  font-size: 12px;
+}
+#host{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#host div, #host img{
+  width: 50%;
+ 
+}
+
+}
+
+
+
+
+
+
+
